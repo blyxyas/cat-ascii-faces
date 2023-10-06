@@ -20,7 +20,7 @@ Note that the cat may render slightly different depending on the terminal.
 
 
 fn main() {
-    let maybe_arg = env::args().nth(1);
+    let maybe_arg = env::args().nth(2);
     if let Some(arg) = maybe_arg {
         if arg == "-a" || arg == "--all" {
             let cats = Cats::all();
