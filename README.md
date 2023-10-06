@@ -34,7 +34,7 @@ The binary is even simpler :sparkles:
 ### Installation
 
 ```
-cargo install cargo-cat
+cargo install cat-ascii-faces
 ```
 
 ### Usage
