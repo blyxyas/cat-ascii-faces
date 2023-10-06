@@ -1,0 +1,17 @@
+[package]
+name = "cat-ascii-faces"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "cat_ascii_faces"
+path = "src/lib.rs"
+
+[[bin]]
+name = "cargo-cat"
+path = "src/main.rs"
+
+[dependencies]
+tinyrand = "0.5.0"
