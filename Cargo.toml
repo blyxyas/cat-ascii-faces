@@ -2,6 +2,13 @@
 name = "cat-ascii-faces"
 version = "0.1.0"
 edition = "2021"
+authors = ["Alejandra González <blyxyas@gmail.com>"]
+description = "A library to generate random ASCII cat faces + binary to print them out"
+license = "MIT"
+repository = "https://github.com/blyxyas/cat-ascii-faces"
+readme = "README.md"
+keywords = ["silly", "cat", "ascii", "art", "emoji"]
+categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
