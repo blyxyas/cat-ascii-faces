@@ -1,4 +1,5 @@
 use tinyrand::{RandRange, Wyrand, Seeded};
+use std::time::{SystemTime, UNIX_EPOCH};
 
 pub struct Cats {
     pub cats: &'static [&'static str],
@@ -7,9 +8,12 @@ pub struct Cats {
 
 impl Cats {
     pub fn new() -> Self {
+        let start = SystemTime::now();
+        let since_the_epoch = start
+            .duration_since(UNIX_EPOCH).unwrap().as_millis();
         Self {
             cats: Self::all(),
-            rand: Wyrand::seed(std::time::Instant::now().elapsed().as_nanos().try_into().unwrap()),
+            rand: Wyrand::seed(since_the_epoch as u64),
         }
     }
 
@@ -154,5 +158,11 @@ impl Cats {
 
     pub fn cat(&mut self) -> &'static str {
         self.cats[self.rand.next_range(0..self.cats.len())]
+    }
+}
+
+impl std::default::Default for Cats {
+    fn default() -> Self {
+        Cats::new()
     }
 }
