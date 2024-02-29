@@ -1,6 +1,6 @@
 [package]
 name = "cat-ascii-faces"
-version = "0.1.4"
+version = "0.1.5"
 edition = "2021"
 authors = ["Alejandra González <blyxyas@gmail.com>"]
 description = "A library to generate random ASCII cat faces + binary to print them out"
