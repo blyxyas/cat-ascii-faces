@@ -16,7 +16,7 @@ Then, you can use it however you'd like:
 use cat_ascii_faces::Cats;
 
 fn main() {
-    let cats = Cats::new();
+    let mut cats = Cats::new();
     // Print some random cats
     println!("{}", cats.cat()); // (=^･ｪ･^=)
     println!("{}", cats.cat()); // ฅ(⌯͒• ɪ •⌯͒)ฅ❣
