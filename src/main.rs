@@ -1,5 +1,4 @@
 #![allow(non_camel_case_types)]
-#![feature(let_chains)]
 
 use std::env;
 use cat_ascii_faces::Cats;
